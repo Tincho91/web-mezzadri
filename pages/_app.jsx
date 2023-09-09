@@ -1,4 +1,5 @@
-import * as React from 'react'
+"use client";
+
 import { ChakraProvider } from '@chakra-ui/react'
 import RootLayout from '../layouts/layout'
 
