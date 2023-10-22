@@ -39,7 +39,13 @@ const CustomPrevArrow = (props) => {
   );
 };
 
-const ImageCarousel = ({ images }) => {
+const ImageCarousel = ({ images = [] }) => {
+
+  if (!images) {
+    console.error('Images array is null or undefined');
+    return null;
+  }
+
   const settings = {
     dots: true,
     infinite: true,
