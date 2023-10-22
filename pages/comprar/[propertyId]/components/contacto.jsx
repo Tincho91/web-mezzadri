@@ -1,31 +1,33 @@
 import { Box, Text, Container, Heading, Flex, Link } from "@chakra-ui/react";
 import { ChatIcon } from "@chakra-ui/icons";
 
-const Contacto = () => {
+const Contact = () => {
 
   return (
     <Box bg="#090D1D" position='relative'>
       <Container maxW="1200px" mx="auto" p={{ base: 0, md: 8 }} position="relative">
         <Box
           h="320px"
-          bgImage="url('/images/contactBanner.png')"
+          maxH='80vh'
+          bgImage="url('/images/buyBanner2.png')"
           bgSize="cover"
           bgPosition="center"
           position="relative"
+          p={5}
         >
           <Box
             position="absolute"
             top={{ base: '17%', md: "50%" }}
             zIndex="1"
-            px={10}
+            px={{base: 0, sm: 10}}
+            pr={5}
             textAlign="left"
           >
-            <Heading color="white" pb={5} fontFamily="Ruda">
-              Estemos en contacto
+            <Heading color="white" pb={5} fontFamily="Ruda" >
+              ¿Te interesa este inmueble?
             </Heading>
             <Text color="white" fontFamily="Roboto" maxW={{base:"100%", md:"45%"}}>
-              Déjanos tu consulta, opinión o sugerencia. Recibí novedades de
-              obra nueva y ofertas.
+              Podemos ponernos en contacto para que tengas más información.
             </Text>
           </Box>
 
@@ -52,9 +54,10 @@ const Contacto = () => {
             </Box>
           </Link>
         </Box>
+
       </Container>
     </Box>
   );
 };
 
-export default Contacto;
+export default Contact;

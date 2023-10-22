@@ -33,8 +33,7 @@ const HamburgerMenu = () => {
         fontSize="25px"
         onClick={isOpen ? onClose : onOpen}
         icon={<FaBars />}
-      >
-      </IconButton>
+      ></IconButton>
 
       <Drawer placement="left" onClose={onClose} isOpen={isOpen} size="full">
         <DrawerOverlay>
@@ -74,7 +73,7 @@ const HamburgerMenu = () => {
                       lg: "5xl",
                       xl: "6xl",
                     }}
-                    href="/sobre-nosotros"
+                    href="/nosotros"
                   >
                     Sobre Nosotros
                   </Link>
@@ -86,7 +85,7 @@ const HamburgerMenu = () => {
                       lg: "5xl",
                       xl: "6xl",
                     }}
-                    href="#quiero-comprar"
+                    href="/comprar"
                   >
                     Quiero Comprar
                   </Link>
@@ -98,7 +97,7 @@ const HamburgerMenu = () => {
                       lg: "5xl",
                       xl: "6xl",
                     }}
-                    href="#quiero-vender"
+                    href="/vender"
                   >
                     Quiero Vender
                   </Link>
@@ -110,10 +109,21 @@ const HamburgerMenu = () => {
                   mt="20"
                   gap={6}
                 >
-                  <FaEnvelope size="1.5em" />
-                  <FaWhatsapp size="1.5em" />
-                  <FaFacebook size="1.5em" />
-                  <FaInstagram size="1.5em" />
+                  <Link isExternal href="mailto:example@example.com">
+                    <FaEnvelope size="1.5em" />
+                  </Link>
+                  <Link
+                    isExternal
+                    href="https://api.whatsapp.com/send?phone=PHONE_NUMBER"
+                  >
+                    <FaWhatsapp size="1.5em" />
+                  </Link>
+                  <Link isExternal href="https://www.facebook.com/YourPage">
+                    <FaFacebook size="1.5em" />
+                  </Link>
+                  <Link isExternal href="https://www.instagram.com/YourProfile">
+                    <FaInstagram size="1.5em" />
+                  </Link>
                 </Flex>
               </Flex>
             </DrawerBody>

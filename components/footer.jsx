@@ -8,21 +8,21 @@ import {
 
 const Footer = () => {
   return (
-    <Flex as="footer" bg="#090D1D" color="white" py={{base: '8', sm: '10'}} w='100%'>
+    <Flex as="footer" bg="#090D1D" color="white" py={{base: '8', md: '10'}} w='100%'>
       <Container maxW="1200px" mx="auto">
         <Flex
-          direction={{ base: "column", sm: "row" }}
+          direction={{ base: "column", md: "row" }}
           wrap="wrap"
           align="center"
           justify="space-between"
         >
-          {/* Icons at the top for small devices */}
+          {/* Icons at the top for mdall devices */}
           <Flex
             align="center"
             justify="space-between"
             w="100%"
-            mb={{ base: 10, sm: 0 }}
-            display={{ base: "flex", sm: "none" }}
+            mb={{ base: 10, md: 0 }}
+            display={{ base: "flex", md: "none" }}
           >
             <FaEnvelope size="1.5em" />
             <FaWhatsapp size="1.5em" />
@@ -41,7 +41,7 @@ const Footer = () => {
               <Flex
                 align="center"
                 gap={2}
-                display={{ base: "none", sm: "flex" }}
+                display={{ base: "none", md: "flex" }}
               >
                 <FaEnvelope size="1.5em" />
                 <FaWhatsapp size="1.5em" />
@@ -51,7 +51,7 @@ const Footer = () => {
             </Flex>
             {/* Other Logo */}
             <Box>
-              <Image src="/images/cdmlogo.png" alt="CDM Logo" h={{base: "50px", sm: "80px"}} />
+              <Image src="/images/cdmlogo.png" alt="CDM Logo" h={{base: "50px", md: "80px"}} />
             </Box>
           </Flex>
         </Flex>

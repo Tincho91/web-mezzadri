@@ -22,17 +22,19 @@ const Navbar = () => {
         <Flex align="center" justify="space-between" width="100%">
           <Flex align="center" gap="10">
             <HamburgerMenu />
-            <Image
-              src="/images/brand.png"
-              alt="Brand Logo"
-              h={{ base: "33px", sm: "40px" }}
-              ml={2}
-            />
+            <Link href="/">
+              <Image
+                src="/images/brand.png"
+                alt="Brand Logo"
+                h={{ base: "33px", sm: "40px" }}
+                ml={2}
+              />
+            </Link>
           </Flex>
 
           <Flex align="center" gap={5}>
-            <Flex align="center" display={{ base: "none", lg: "flex" }} gap={5}>
-              <Link href="/sobre-nosotros">
+            <Flex align="center" display={{ base: "none", lg: "flex" }} gap={5} fontFamily='roboto'>
+              <Link href="/nosotros">
                 <Box mx={2}>Sobre Nosotros</Box>
               </Link>
               <Link href="/comprar">
