@@ -13,9 +13,14 @@ body,
   background-color: #B9D0FF;
 }
 
+::-webkit-scrollbar-track {
+  background-color: #090D1D;
+}
+
 /* Para Firefox */
 * {
   scrollbar-color: #B9D0FF transparent;
+  overflow-x: hidden;
 }
 
 

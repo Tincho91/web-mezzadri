@@ -96,13 +96,33 @@ const Comprar = () => {
           <Flex direction="column" align="flex-start" h="full">
             <Heading
               fontSize="4xl"
-              fontWeight="bold"
               fontFamily="Ruda"
-              color="white"
+              fontWeight="bold"
+              textColor="white"
             >
               ¿Querés{" "}
-              <span style={{ textDecoration: "underline" }}>comprar</span> un
-              inmueble?
+              <Box as="span" position="relative" display="inline-block">
+                <Box
+                  as="span"
+                  position="absolute"
+                  bottom="10%"
+                  left="50%"
+                  transform="translateX(-50%)"
+                  width="102%"
+                  height="50%"
+                  bg="#2D4496"
+                  zIndex="1"
+                ></Box>
+                <span
+                  style={{
+                    zIndex: "2",
+                    position: "relative",
+                  }}
+                >
+                  comprar
+                </span>
+              </Box>{" "}
+              un inmueble?
             </Heading>
             <Text fontSize="md" mt={4} fontFamily="Roboto" color="white">
               Queremos ayudarte a encontrar el mejor inmueble en{" "}

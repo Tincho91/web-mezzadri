@@ -74,7 +74,7 @@ const Team = () => {
 
             
             <Link
-              href="/comprar"
+              href="/nosotros"
               width="full"
               style={{ textDecoration: "none" }}
             >
