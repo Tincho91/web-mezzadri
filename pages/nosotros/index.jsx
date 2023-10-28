@@ -33,9 +33,9 @@ const Nosotros = () => {
             top={{ sm: "35%", lg: "45%" }}
             left={{ sm: 0, md: "auto" }}
             m={{ sm: 5, md: "0" }}
-            p={{ sm: 5, md: "0" }}
-            bg={{ sm: "rgba(0,0,0,0.5)", md: "transparent" }}
-            textColor={{ base: "black", sm: "white", md: "black" }}
+            p={{ base: 5, md: "0" }}
+            bg={{ base: "rgba(0,0,0,0.5)", md: "transparent" }}
+            textColor={{ base: "white", md: "black" }}
             w={{ md: "35%", xl: "30%" }}
           >
             <Heading as="h1" size="xl" fontFamily="Ruda">

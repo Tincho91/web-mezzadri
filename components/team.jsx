@@ -33,6 +33,8 @@ const Team = () => {
     sm: "4",
   });
 
+  const imageUrl = useBreakpointValue({ base: "images/foto1M.png", sm: "images/foto1.png" });
+
   return (
     <Box
       position="relative"
@@ -42,10 +44,12 @@ const Team = () => {
       <Container maxW="1200px" mx="auto" position="relative">
         <Flex position="relative" direction="column">
           <Image
-            src="images/foto1.png"
+            src={imageUrl}
             alt="Team"
             mx={{ base: "0", sm: imagePadding }}
-            mt={{ base: "5", sm: imagePadding }}
+            mt={{ base: "0", sm: imagePadding }}
+            minH={{ base: "280px", sm: "auto" }}
+            objectFit="cover"
           />
 
           <VStack

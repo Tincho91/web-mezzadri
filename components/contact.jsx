@@ -29,7 +29,7 @@ const Contacto = () => {
             </Text>
           </Box>
 
-          <Link href="/contacto">
+          <Link href="/">
             <Box
               fontFamily="Roboto"
               fontSize="16px"
