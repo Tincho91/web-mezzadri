@@ -17,46 +17,63 @@ const Info = () => {
   });
 
   return (
-    <Box position="relative" bgColor="#ECF0FF">
+    <Box position="relative">
       {/* Fondo superior */}
       <Box
         position="absolute"
         top="0"
         left="0"
         right="0"
-        h="280px"
+        h={{ base: "200px", sm: "280px" }}
         bg="#090D1D"
         zIndex="-1"
       />
       <Container maxW="1200px" h="100%" mx="auto">
         <Box py="20" width="full" w={{ base: "full", md: "75%" }} mx="auto">
           {breakpoint === "base" ? (
-            <Flex direction="column" align="stretch">
+            <Flex
+              direction="column"
+              align="stretch"
+              position="relative"
+              zIndex="0"
+            >
               <Image
                 src="/images/susanaM.png"
                 h="250px"
                 alt="Susana Mezzadri"
                 alignSelf="flex-start"
+                objectFit="cover"
               />
-              <Box >
-                <Heading>Susana Mezzadri</Heading>
-                <Text>
+              <Box py={5}>
+                <Heading fontFamily="Ruda">Susana Mezzadri</Heading>
+                <Text fontFamily="Roboto">
                   Martillera y corredora pública desde el año 2001, con
                   experiencia de 27 años en el mercado inmobiliario local.
                   Perito en tasaciones en el Departamento Judicial Mar del
                   Plata.
                 </Text>
               </Box>
-              <Box bg="#090D1D">
-                <Text color="white">
-                  Martillera y corredora pública desde el año 2001, con
-                  experiencia de 27 años en el mercado inmobiliario local.
-                  Perito en tasaciones en el Departamento Judicial Mar del
-                  Plata.
-                </Text>
+              <Box position="relative" zIndex="0" py={5} px="4" mx="-4" >
+                <Box
+                  position="absolute"
+                  top="0"
+                  left="0"
+                  right="0"
+                  bottom="0"
+                  bg="#090D1D"
+                  zIndex="0"
+                />
+                <Box position="relative" zIndex="1">
+                  <Text color="white" fontFamily="Roboto">
+                    Martillera y corredora pública desde el año 2001, con
+                    experiencia de 27 años en el mercado inmobiliario local.
+                    Perito en tasaciones en el Departamento Judicial Mar del
+                    Plata.
+                  </Text>
+                </Box>
               </Box>
-              <Box bg="white">
-                <Text>
+              <Box bg="white" py={5}>
+                <Text fontFamily="Roboto">
                   Al equipo de Ventas se ha incorporado una excelente amiga de
                   la casa, Patricia. Ella sigue el lineamiento de nuestra
                   máxima: Comunicación Predisposición Idoneidad Requisitos
@@ -69,6 +86,7 @@ const Info = () => {
                 h="250px"
                 alt="Patricia Uranga"
                 alignSelf="flex-end"
+                objectFit="cover"
               />
             </Flex>
           ) : (
@@ -84,7 +102,9 @@ const Info = () => {
                   />
                 </Box>
                 <Box bgColor="#ECF0FF" my="auto" ml="-5" p={10}>
-                  <Heading py="3" fontFamily="Ruda">Susana Mezzadri</Heading>
+                  <Heading py="3" fontFamily="Ruda">
+                    Susana Mezzadri
+                  </Heading>
                   <Box>
                     <Text fontFamily="Roboto">
                       Martillera y corredora pública desde el año 2001, con

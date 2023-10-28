@@ -20,7 +20,6 @@ body,
 /* Para Firefox */
 * {
   scrollbar-color: #B9D0FF transparent;
-  overflow-x: hidden;
 }
 
 

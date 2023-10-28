@@ -30,13 +30,13 @@ const Nosotros = () => {
         <Container maxW="1200px" h="100%" mx="auto">
           <Box
             position={{ base: "initial", sm: "absolute" }}
-            top={{ sm: "45%" }}
+            top={{ sm: "35%", lg: "45%" }}
             left={{ sm: 0, md: "auto" }}
             m={{ sm: 5, md: "0" }}
             p={{ sm: 5, md: "0" }}
             bg={{ sm: "rgba(0,0,0,0.5)", md: "transparent" }}
             textColor={{ base: "black", sm: "white", md: "black" }}
-            w={{ md: "35%" }}
+            w={{ md: "35%", xl: "30%" }}
           >
             <Heading as="h1" size="xl" fontFamily="Ruda">
               Sobre Nosotros
